@@ -1,0 +1,258 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-07 20:35:50
+ * @LastEditTime: 2021-03-08 18:31:07
+ * @LastEditors: Please set LastEditors
+ * @Description: 小米官网仿写
+ * @FilePath: \Study_Notesd:\mi\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>小米 - 小米11、Redmi K40 Pro、小米MIX Alpha, 小米电视官方网站</title>
+  <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+  <link rel="stylesheet" href="/font/font_2406758_37g4l0cedsq/iconfont.css">
+  <style>
+    /* 初始化样式 */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .clearfix::after,
+    .clearfix::before{
+      content:'';
+      display: table;
+      clear: both;
+    }
+    /* 通用样式 */
+    .w {
+      width: 1226px;
+      margin: 0 auto;
+      /* background-color: pink; */
+    }
+    .fr{
+      float: right;
+    }
+    .fl{
+      float: left;
+    }
+    /* index页面样式 */
+    .top{
+      height: 40px;
+      background-color: #333;
+    }
+    .top-inner{
+      line-height: 40px;
+    }
+    .topbar-nav li{
+      float: left;
+    }
+    .topbar-nav li a{
+      display: inline-block;
+      color: #b0b0b0;
+      font-size: 12px;
+      font-family: "Microsoft Yahei";
+      vertical-align: bottom;
+    }
+    .topbar-nav li>a:hover{
+      color:#fff;
+    }
+    .topbar-nav .download:hover .download-code {
+      /* display: block; */
+      height: 148px;    
+    }
+    .divline{
+      color: #404040;
+      margin: 0px 8px;
+    }
+    .download{
+      position: relative;
+    }
+    .triangle{
+      height: 0px;
+      width: 0px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #FCFCFC;
+      position: absolute;
+      bottom: -1px;
+      left: 12px;
+      z-index: 40;
+      display: none;
+    }
+    .topbar-nav .download:hover .triangle{
+      display: block;
+    }
+    .download-code{
+      position:absolute;
+      top: 40px;
+      left: -50%;
+      background-color: #fff;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      /* height:148px; */
+      height: 0px;
+      overflow: hidden;
+      z-index:39;
+      box-shadow: 0px 1px 5px #aaa;
+      line-height: 14px;
+      /* display: none; */
+      transition: height 1s;
+    }
+    .download-code img{
+      margin: 18px 17px 12px;
+    }
+    .topbar-login li{
+      float: left;
+    }
+    .topbar-login li a{
+      display: inline-block;
+      color: #b0b0b0;
+      font-size: 12px;
+      font-family: "Microsoft Yahei";
+      vertical-align: bottom;
+    }
+    .topbar-login li a:hover{
+      color:#fff;
+    }
+    .topbar-shoppingcart{
+      background-color: #4242;
+      margin-left: 26px;
+      text-align: center;
+      vertical-align: bottom;
+      position: relative;
+    }
+    .topbar-shoppingcart i{
+      vertical-align: bottom;
+    }
+    .topbar-shoppingcart a{
+      display: inline-block;
+      width: 120px;
+      vertical-align: bottom;
+      color: #b0b0b0;
+      font-size: 12px;
+      font-family: "Microsoft Yahei";
+    }
+    .topbar-shoppingcart a:hover{
+      color:#fff;
+
+    }
+    .shoppingcartinfo{
+      width: 316px;
+      height: 0px;
+      overflow: hidden;
+      background-color: #fff;
+      position:absolute;
+      top:40px;
+      right:0px;
+      box-shadow: 0px 1px 5px #aaa;
+      transition: all 1s;
+    }
+    .topbar-shoppingcart a:hover .shoppingcartinfo{
+      color: #b0b0b0;
+      height: 100px;
+      line-height: 100px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <div class="top">
+    <div class="top-inner w clearfix">
+      <!-- 顶部导航:左侧导航部分 -->
+      <ul class="topbar-nav clearfix fl">
+        <li>
+          <a href="#">小米商城</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">MIUI</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">loT</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">云服务</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">天星数科</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">有品</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">小爱开放平台</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">企业团购</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">资质证照</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">协议规则</a><span class="divline">|</span>
+        </li>
+        <li class="download">
+          <a href="#">
+            下载app
+            <!-- 下载二维码 -->
+            <div class="triangle"></div>
+            <span class="download-code">
+              <img src="/imgs/download.png" alt="下载二维码" width="90px" height="90px">
+              小米商城APP
+            </span>
+          </a>
+          <span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">智能生活</a><span class="divline">|</span>
+        </li>
+        <li>
+          <a href="#">Select Location</a>
+        </li>
+      </ul>
+      <!-- 购物车 -->
+      <div class="topbar-shoppingcart fr">
+        <a href="">
+          <i class="iconfont icon-gouwuche"></i>
+          购物车&nbsp;(0)
+          <div class="shoppingcartinfo">
+            购物车中还没有商品，赶紧选购吧！
+          </div>
+        </a>
+      </div>
+      <!-- 顶部导航:右侧导航部分 -->
+      <ul class="topbar-login clearfix fr">
+        <li><a href="#">登录</a><span class="divline">|</span></li>
+        <li><a href="#">注册</a><span class="divline">|</span></li>
+        <li><a href="#">消息通知</a></li>
+
+      </ul>
+      
+      
+      
+      
+      
+      
+    </div>
+    
+  </div>
+  <!-- 测试 -->
+  <!-- <br>
+  <div class="triangle">
+
+  </div> -->
+  
+</body>
+</html>
