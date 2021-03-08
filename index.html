@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-07 20:35:50
- * @LastEditTime: 2021-03-08 18:31:07
+ * @LastEditTime: 2021-03-08 21:25:17
  * @LastEditors: Please set LastEditors
  * @Description: 小米官网仿写
  * @FilePath: \Study_Notesd:\mi\index.html
@@ -47,6 +47,7 @@
       float: left;
     }
     /* index页面样式 */
+    /* 顶部导航栏开始 */
     .top{
       height: 40px;
       background-color: #333;
@@ -164,7 +165,66 @@
       height: 100px;
       line-height: 100px;
     }
-    
+    /* 顶部导航栏结束 */
+
+    /* 头部开始 */
+    .header{
+      /* background-color: pink; */
+    }
+    .header-inner{
+      height: 100px;
+      background-color: #fff;
+    }
+    /* logo */
+    .logo{
+      display:inline-block;
+      width: 55px;
+      height: 55px;
+      background: #FF6700 url("/imgs/mi-logo.png") no-repeat center;
+      text-indent: -9999px;
+      overflow: hidden;
+      margin-top: 22px;
+    }
+    /* 头部导航：header-nav */
+    .header-nav{
+      margin-left: 190px;
+      float: left;
+      line-height: 80px;
+    }
+    .header-nav li{
+      float:left;
+    }
+    .header-nav li a{
+      color:#333;
+      display: inline-block;
+      padding: 10px;
+      
+    }
+    .header-nav li a:hover{
+      color:#FF6700;
+    }
+    /* 搜索栏 */
+    .searchinput {
+      margin-top: 25px;
+      font-size: 0px;
+    }
+    .searchword {
+      width: 242px;
+      height: 48px;
+      border: 1px solid #e0e0e0;
+      padding: 0px 10px;
+      font-size: 14px;
+      color: #757575;
+    }
+    .fangdajing{
+      width: 50px;
+      height: 50px;
+      color: #616161;
+      border: 1px solid #e0e0e0;
+      border-left: none;
+      vertical-align: bottom;
+      background-color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -245,6 +305,39 @@
       
       
       
+    </div>
+    
+  </div>
+
+  <!-- 头部部分 -->
+  <div class="header">
+    <div class="header-inner w">
+      <!-- 网页logo -->
+      <div class="header-logo fl">
+        <h1>
+          <a href="" class="logo">小米官网</a>
+        </h1>
+      </div>
+      <!-- 导航 -->
+      <ul class="header-nav clearfix">
+        <li><a href="">小米手机</a></li>
+        <li><a href="">Redmi红米</a></li>
+        <li><a href="">电视</a></li>
+        <li><a href="">笔记本</a></li>
+        <li><a href="">家电</a></li>
+        <li><a href="">路由器</a></li>
+        <li><a href="">智能硬件</a></li>
+        <li><a href="">服务</a></li>
+        <li><a href="">社区</a></li>
+      </ul>
+      <!-- 搜索栏 -->
+      <div class="searchinput fr">
+        <input type="text" name="searchword" id="searchword" class="searchword" placeholder="3.8 [女神节] 手机特惠专场">
+        <input type="button" value="&#xe63d;" class="iconfont fangdajing"></input>
+      </div>
+      
+      
+
     </div>
     
   </div>
