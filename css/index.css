@@ -57,7 +57,7 @@
       /* height:148px; */
       height: 0px;
       overflow: hidden;
-      z-index:39;
+      z-index:42;
       box-shadow: 0px 1px 5px #aaa;
       line-height: 14px;
       /* display: none; */
@@ -111,6 +111,7 @@
       right:0px;
       box-shadow: 0px 1px 5px #aaa;
       transition: all 1s;
+      z-index: 42;
     }
     .topbar-shoppingcart a:hover .shoppingcartinfo{
       color: #b0b0b0;
@@ -119,6 +120,7 @@
     }
     /* 顶部导航栏结束 */
 
+    /* 头部 */
     /* 头部开始 */
     .header{
       /* background-color: pink; */
@@ -157,11 +159,11 @@
     .header-nav li a:hover{
       color:#FF6700;
     }
-    /* .header-nav.li:hover ~ .hiddenarea {
+    .header-nav .active:hover ~ .hiddenarea {
       height: 230px;
       border-top: 1px solid #e0e0e0;
 
-    } */
+    }
     /* 搜索栏 */
     .searchinput {
       margin-top: 25px;
@@ -189,6 +191,8 @@
       /* height: 230px; */
       height: 0px;
       overflow: hidden;
+      font-size: 12px;
+      line-height: 20px;
       width: 100%;
       background-color: #fff;
       position:absolute;
@@ -211,14 +215,203 @@
       color:#333;
     }
     .line{
-      height:100px;
+      height:104px;
       width: 0px;
-      border:1px solid #aaa;
+      border:1px solid #e0e0e0;
       display: inline-block;
       position: absolute;
-      top:35px;
+      top: 48px;
       right:0px;
     }
     .price{
       color:#FF6700;
+    }
+    /* 头部结束 */
+
+    /* banner开始 */
+    .banner-inner{
+      height: 460px;
+      background-color: paleturquoise;
+      position: relative;
+    }
+    /* 目录部分 */
+    .catalog{
+      width: 235px;
+      background-color: rgba(157,148,139, .5);
+      padding: 20px 0px 20px 0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 11;
+    }
+    .catalog li {
+      position: relative;
+      padding-left: 30px;
+    }
+    .catalog li:hover{
+      background-color: #FF6700;
+    }
+
+    .catalog li a{
+      display: inline-block;
+      height: 42px;
+      width: 100%;
+      line-height: 42px;
+      color: #fff;
+      font-size: 14px;
+    }
+    .leftpointer{
+      position: absolute;
+      right: 24px;
+      top:0px;
+      font-size: 36px;
+      color:#DEDEDE;
+    }
+    /* 轮播图 */
+    .slider{
+    }
+    .slider-img {
+      z-index: 10;
+      width: 1226px;
+      height: 460px;
+      overflow: hidden;
+    }
+    .slider-img li{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .slider-img a{
+      display: block;
+      width: 1226px;
+      height: 460px;
+
+    }
+    .slider1{
+      background: url(../imgs/banner5.webp) no-repeat scroll center;
+    }
+    .slider2 img{
+      width: 100%;
+    
+    }
+    .slider3{
+      background: url(../imgs/banner3.webp) no-repeat scroll center;
+    }
+    .slider4{
+      background: url(../imgs/banner4.webp) no-repeat scroll center;
+    }
+    .slider5{
+      background: url(../imgs/banner1.webp) no-repeat scroll center;
+    }
+    /* 按钮 */
+    /* 前后按钮 */
+    .lrbtn i{
+      width: 44px;
+      height: 70px;
+      line-height: 70px;
+      background: transparent;
+      font-size: 42px;
+      color:#a8a9ac;
+      margin-top: -35px;
+    }
+    .lrbtn i:hover{
+      color:#fff;
+      background-color: #787878;
+
+    }
+    .next{
+      position: absolute;
+      right: 0px;
+      top: 50%;
+    }
+    .previous{
+      position: absolute;
+      left: 235px;
+      top: 50%;
+    }
+    /* 圆圈按钮 */
+    .circlebtn {
+      position: absolute;
+      bottom: 26px;
+      right: 34px;
+    }
+    .circlebtn a{
+      float: left;
+      width: 6px;
+      height: 6px;
+      border: 2px solid rgba(255,255,255,.3);
+      background-color: rgba(0,0,0,.4);
+      margin-left: 10px;
+      border-radius: 50%;
+    }
+    .circlebtn a:hover,
+    .circlebtn a:active{
+      border-color: rgba(0,0,0,.4);
+      background-color: rgba(255,255,255,.4);
+    }
+    /* banner结束 */
+
+    /* 链接排列部分开始 */
+    /* 服务链接 */
+    .channellist-inner{
+      margin: 14px 0px 24px;
+    }
+    .channellist-inner li{
+      float: left;
+    }
+    .channelshortcut{
+      width: 236px;
+      height: 172px;
+      background-color: #5F5750;
+    }
+    .channelshortcut li{
+      float: left;
+      text-align: center;
+      width: 78px;
+      height: 84px;
+      position: relative;
+    }
+    .channelshortcut li::before{
+      height: 70px;
+      width: 1px;
+      content:"";
+      background-color: #665e57;
+      position:absolute;
+      top: 3px;
+      left: 5px;
+    }
+    .channelshortcut li::after{
+      position:absolute;
+      top: 3px;
+      left: 5px;
+      width: 70px;
+      height: 1px;
+      content:"";
+      background-color: #665e57;
+    }
+    .channelshortcut li a{
+      font-size: 14px;
+      color:#B6B3B0;
+    }
+    .channelshortcut li a:hover{
+      color:#FFF;
+    }
+    .channelshortcut li img{
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+      opacity: .6;
+      transition: opacity .4s;
+    }
+    .channelshortcut li a:hover img {
+      opacity: 1;
+    }
+    .channellist-inner .ad{
+      margin-left:12px;
+    }
+    .channellist-inner .ad img{
+      width: 318px;
+      height: 172px;
     }
