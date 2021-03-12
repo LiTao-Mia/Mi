@@ -305,11 +305,12 @@
     }
     /* 按钮 */
     /* 前后按钮 */
-    .lrbtn i{
+    /* 文字图标实现 */
+    /* .lrbtn i{
       width: 44px;
       height: 70px;
       line-height: 70px;
-      background: transparent;
+      background-color: transparent;
       font-size: 42px;
       color:#a8a9ac;
       margin-top: -35px;
@@ -328,6 +329,36 @@
       position: absolute;
       left: 235px;
       top: 50%;
+    } */
+
+    /* 雪碧图实现 */
+    .lrbtn a{
+      width: 42px;
+      height: 70px;
+      color:#a8a9ac;
+      margin-top: -35px;
+      background-image: url(../imgs/icon-slides.png);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+    .previous {
+      position: absolute;
+      background-position: -84px 0px;
+      left: 235px;
+
+    }
+    .previous:hover{
+      background-position: 0px 0px;  
+    }
+    .next {
+      position: absolute;
+      background-position: -124px 0px;
+      right: 0px;
+
+    }
+    .next:hover{
+      background-position: -42px 0px;
     }
     /* 圆圈按钮 */
     .circlebtn {
