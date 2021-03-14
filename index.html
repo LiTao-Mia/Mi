@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-07 20:35:50
- * @LastEditTime: 2021-03-12 19:50:20
+ * @LastEditTime: 2021-03-14 18:10:03
  * @LastEditors: Please set LastEditors
  * @Description: 小米官网仿写
  * @FilePath: \Study_Notesd:\mi\index.html
@@ -36,6 +36,10 @@
       clear: both;
     }
     /* 通用样式 */
+    html{
+      height:10000px;
+      /* background-color: lightsalmon; */
+    }
     .w {
       width: 1226px;
       margin: 0 auto;
@@ -138,7 +142,7 @@
       </div>
       <!-- 导航 -->
       <ul class="header-nav clearfix">
-        <!-- TODO:隐藏层内容显示，active实现 -->
+        <!-- TODO:隐藏层内容显示，active实现 js-->
         <li class="active"><a href="">小米手机</a></li>
         <li class="active"><a href="">Redmi红米</a></li>
         <li class="active"><a href="">电视</a></li>
@@ -207,6 +211,7 @@
   <!-- 轮播图-导航目录 -->
   <div class="banner">
     <div class="banner-inner w">
+
       <!-- 导航目录 -->
       <ul class="catalog">
         <li>
@@ -311,6 +316,72 @@
         </div>
       </div>
 
+      <!-- 固定快捷方式 -->
+      <ul class="fixedbar">
+        <li>
+          <a href="">
+            <div class="fixedbar_img clearfix">
+              <img src="imgs/mobile.png" alt="手机扫码" class="mobile">
+              <img src="imgs/mobile_hover.png" alt="手机扫码" class="mobile_hover">
+            </div>
+            <!-- 三角 -->
+            <div class="obliquetriangle"></div>
+            <!-- 二维码 -->
+            <div class="codebox">
+              <img src="imgs/download.png" alt="二维码">
+              <span class="codebox-text">
+                扫码领取新人百万礼包
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="fixedbar_img clearfix">
+              <img src="imgs/user.png" alt="用户" class="user">
+              <img src="imgs/user_hover.png" alt="用户" class="user_hover">
+            </div>
+            <!-- 三角 -->
+            <div class="obliquetriangle"></div>
+            <span class="textbox">个人中心</span>
+
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="fixedbar_img clearfix">
+              <img src="imgs/setting.png" alt="售后" class="postsale">
+              <img src="imgs/setting_hover.png" alt="售后" class="postsale_hover">
+            </div>
+            <!-- 三角 -->
+            <div class="obliquetriangle"></div>
+            <span class="textbox">售后服务</span>
+          </a>
+        </li>
+        <li>
+          <a class="clearfix" href="">
+            <div class="fixedbar_img clearfix">
+              <img src="imgs/service.png" alt="服务" class="service">
+              <img src="imgs/service_hover.png" alt="服务" class="service_hover">
+            </div>
+            <!-- 三角 -->
+            <div class="obliquetriangle"></div>
+            <span class="textbox">人工客服</span>
+          </a>
+        </li>
+        <li>
+          <a class="clearfix" href="">
+            <div class="fixedbar_img clearfix">
+              <img src="imgs/shoppingcar.png" alt="购物车" class="shoppingcar">
+              <img src="imgs/shoppingcar_hover.png" alt="购物车" class="shoppingcar_hover">
+          </div>
+          <!-- 三角 -->
+          <div class="obliquetriangle"></div>
+          <span class="textbox">购物车(0)</span>
+          </a>
+        </li>
+      </ul>
+      
     </div>
 
   </div>
